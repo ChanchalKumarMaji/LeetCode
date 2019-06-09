@@ -12,19 +12,19 @@ typedef pair<TreeNode*, ii> Tii;
 class Solution {
 public:
     int maxAncestorDiff(TreeNode* root) {
-        stack<Tii> s; s.push(Tii(root, ii(root->val, root->val)));
+        queue<Tii> q; q.push(Tii(root, ii(root->val, root->val)));
         int res = 0;
-        while(!s.empty()){
-            int nodeCount = s.size();
+        while(!q.empty()){
+            int nodeCount = q.size();
             while(nodeCount--){
-                Tii temp = s.top(); s.pop();
+                Tii temp = q.front(); q.pop();
                 TreeNode* node = temp.first;
                 ii p = temp.second;
                 if(node->left){
-                    s.push(Tii(node->left, ii(max(p.first, node->left->val), min(p.second, node->left->val))));
+                    q.push(Tii(node->left, ii(max(p.first, node->left->val), min(p.second, node->left->val))));
                 }
                 if(node->right){
-                    s.push(Tii(node->right, ii(max(p.first, node->right->val), min(p.second, node->right->val))));
+                    q.push(Tii(node->right, ii(max(p.first, node->right->val), min(p.second, node->right->val))));
                 }
                 if(!node->left && !node->right){
                     res = max(res, abs(p.first-p.second));
