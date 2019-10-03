@@ -28,7 +28,7 @@ public:
             pos--;
         }
         p->next=p->next->next;      
-        
+       
         return head;
     }
     
