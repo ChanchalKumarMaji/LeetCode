@@ -5,5 +5,6 @@ class Solution:
         :type k: int
         :rtype: int
         """
+        
         nums.sort()
         return nums[::-1][k-1]
