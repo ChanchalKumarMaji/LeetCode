@@ -31,3 +31,5 @@ class Solution:
             return [i, j]
         else:
             return [-1, -1]
+
+        
