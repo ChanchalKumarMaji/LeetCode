@@ -23,7 +23,7 @@ class Solution:
                         
             return "IPv4"        
             
-            
+      
         if ':' in IP:
             l=IP.split(":")
             if len(l)!=8:
