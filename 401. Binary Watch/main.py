@@ -13,7 +13,7 @@ class Solution:
                 n = n//2
             hour.append(bit) 
         #print(hour)    
-        
+       
         minute = []
         for i in range(0, 60):
             bit = [0, 0, 0, 0, 0, 0]
