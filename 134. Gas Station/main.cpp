@@ -7,3 +7,4 @@ public:
         return (total+tank<0)? -1:start;
     }
 };
+
