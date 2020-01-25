@@ -5,4 +5,3 @@ class Solution:
         :rtype: str
         """
         return s[::-1]
-    
