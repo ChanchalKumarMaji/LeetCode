@@ -22,6 +22,6 @@ public:
         for(int i=0; i<root->children.size(); i++){
             m = max(m, maxDepth(root->children[i]));
         }
-        return 1+m;  
+        return 1 + m;  
     }
 };
