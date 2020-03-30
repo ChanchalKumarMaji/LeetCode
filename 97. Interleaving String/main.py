@@ -34,7 +34,7 @@ class Solution:
                     
                 
         
-        print(dp)
+        #print(dp)
         
         if dp[-1][-1]:
             return True
