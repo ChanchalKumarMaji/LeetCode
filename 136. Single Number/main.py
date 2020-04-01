@@ -4,4 +4,7 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        return 2*sum(set(nums))-sum(nums)
+        res = 0
+        for num in nums:
+            res ^= num
+        return res
