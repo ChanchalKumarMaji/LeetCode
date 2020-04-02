@@ -1,16 +1,9 @@
 class Solution:
-    def isHappy(self, n):
-        """
-        :type n: int
-        :rtype: bool
-        """
-        s=set()
-        
-        while True:
-            n=sum([int(i)**2 for i in str(n)])
-            if n==1:
-                return True
-            elif n in s:
+    def isHappy(self, n: 'int') -> 'bool':
+        s = set()
+        while n != 1:
+            n = sum([int(e)**2 for e in str(n)])
+            if n in s:
                 return False
-            else:
-                s.add(n)
+            s.add(n)
+        return True
