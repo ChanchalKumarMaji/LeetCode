@@ -8,8 +8,4 @@ class Solution:
         for s in strs:
             d[''.join(sorted(s))].append(s)
             
-        l=[]
-        for k in d.values():
-            l.append(k)
-            
-        return l
+        return list(d.values())
