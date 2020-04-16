@@ -19,14 +19,13 @@ public:
         else
         {
             for(i=length-1;i>=0;i--){
-                d=(d+digits[i]);
-                r=d%10;
-                digits[i]=r;
-                d=d/10; 
+                d = (d+digits[i]);
+                r = d%10;
+                digits[i] = r;
+                d = d/10; 
             }
             
             return digits;
-                
         }
     }
 };
