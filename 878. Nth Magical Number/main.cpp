@@ -1,6 +1,5 @@
 typedef long long LL;
 
-
 class Solution {
     LL gcd(LL a, LL b)
     {
