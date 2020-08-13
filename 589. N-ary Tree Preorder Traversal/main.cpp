@@ -19,7 +19,7 @@ class Solution {
         if(!root)
             return;
         res.push_back(root->val);
-        for(int i=0; i<root->children.size(); i++){
+        for(int i=0; i < root->children.size(); i++){
             preOrder(root->children[i]); 
         }
     }
