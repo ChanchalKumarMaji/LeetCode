@@ -17,5 +17,4 @@ class Solution:
                     break
             if flag == 1:        
                 l.append(n)
-                
         return l
