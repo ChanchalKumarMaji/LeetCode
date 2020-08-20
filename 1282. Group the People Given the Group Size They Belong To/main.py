@@ -10,5 +10,4 @@ class Solution:
             v = d[k]
             for i in range(0, len(v), k):
                 res.append(v[i:i+k])
-        
         return res
